@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>
+            About
+        </title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+        <script>
+            function greet()
+            {
+                let name = document.querySelector("#name").value;
+                if (name === "")
+                {
+                    name = "NoName";
+                }
+
+                alert("Hello " + name + "!")
+            }
+        </script>
+    </head>
+    <body>
+        <div class="sidebar">
+
+            <h1> About! </h1>
+
+            <a class="sidebarbutton" href="index.html"> Home </a>
+
+            <a class="sidebarbutton" href="Yoke.html"> Yoke </a>
+
+            <a class="sidebarbutton" href="Yolk.html"> Yolk </a>
+
+            <a class="sidebarbutton" href="about.html"> About</a>
+
+        </div>
+
+        <div class="main">
+
+            <h2> Yoke or Yolk? You decide...<br></h2>
+
+            <a href="https://en.wikipedia.org/wiki/Yoke"> Yoke Wiki<br></a>
+
+            <a href="https://en.wikipedia.org/wiki/Yolk"> Yolk Wiki <br><br></a>
+
+            <h3> What's your name? </h3>
+
+            <form onsubmit="greet(); return false">
+
+                <input type="text" id="name">
+
+                <input type="submit"><br><br>
+
+            </form>
+
+            <p style="font-size: 16px;"> By Sam Dawson </p>
+
+        </div>
+    </body>
+</html>
